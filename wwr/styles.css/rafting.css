@@ -1,0 +1,50 @@
+:root {
+    --primary: #28B0B2;
+    --secondary: #216869;
+    --accent1: #FFFFFF;
+    --accent2: #A5D0E8;
+}
+
+h1, h2 {
+    color: var(--primary);
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font: 700 italic 1.5rem Arial, sans-serif;
+}
+
+p {
+    color: var(--secondary);
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.social-media-links a img {
+    text-decoration: none; 
+    border: none; 
+    display: block;
+}
+.hero img {
+    display: block;
+    width:100%;
+    height: auto;
+}
+.hero {
+    background-color: var(--accent2); 
+    color: var(--secondary); 
+    height: 500px; 
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+}
+.adventure-awaits-you-images {
+    display: flex;
+    flex-direction: colomn;
+}

@@ -44,8 +44,3 @@ body {
     justify-content: center;
     text-align: center; 
 }
-.adventure-awaits-you-images {
-    display: flex;
-    flex-direction: column;
-    background-color: red; 
-}

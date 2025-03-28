@@ -46,5 +46,6 @@ body {
 }
 .adventure-awaits-you-images {
     display: flex;
-    flex-direction: colomn;
+    flex-direction: column;
+    background-color: red; 
 }

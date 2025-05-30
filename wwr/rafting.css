@@ -6,20 +6,11 @@
     --heading-font:"Roboto", sans-serif;
     --body-font:"Open Sans", sans-serif;
 }
-/* header{
-    background-color: purple;
-    color: red;
-} */
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-/* .logo img{
-    margin: 0 0.25rem 0 1rem;
-    width: 64px;
-    height: auto;
-} */
  a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -30,15 +21,31 @@ body{
 }
 header,main,footer {
     width:840px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+header {
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+    }
 h1,h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav,p,section,article {
+nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 .socialmedia a {
     text-decoration: none;
@@ -77,12 +84,11 @@ article {
     /* color: ; */
 }
 .hero article img {
-    float: right;
     width: 125px;
     float: left;
 
 }
-.section 2 img {
+#adventure img {
     display: flex;
     flex-direction: column;
     align-items: center;

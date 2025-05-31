@@ -32,7 +32,7 @@ h1,h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav, p, section, article {
+nav, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -80,8 +80,6 @@ article {
     left: 20px;
     text-align: center;
     opacity: 0.7;
-    /* background-color: ; */
-    /* color: ; */
 }
 .hero article img {
     width: 125px;
@@ -93,4 +91,109 @@ article {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+}
+
+.article-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 16px;
+    border-radius: 8px;
+    opacity: 0.9;
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.article-box p {
+    margin-right: 16px;
+    color: #000; 
+    font-weight: 500;
+}
+
+.article-box img {
+    width: 125px;
+    height: auto;
+    border-radius: 4px;
+}
+.history-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--accent2-color);
+}
+
+.history-text {
+    flex: 1; 
+    padding: 10px;
+    color: black;
+}
+
+.history-text p {
+    margin-bottom: 10px;
+    text-align: justify; 
+}
+
+.history-image {
+    max-width: 200px;  
+    height: auto;
+    border-radius: 8px;
+    margin: 0 16px; 
+}
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; 
+  gap: 12px;
+  padding: 10px;
+  background-color: rgb(186, 181, 181);
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  background-color: var(--accent1-color);
+}
+
+.adventure-gallery img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--accent2-color);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: Black;
+}
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid var(--accent2-color);
+    width: 840px;
+    margin: 40px auto 0 auto; 
+}
+footer .socialmedia {
+    display: flex;
+    gap: 12px;
+}
+
+footer .socialmedia a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
 }

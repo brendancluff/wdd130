@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #505033;
+  --secondary-color: #264969;
+  --accent1-color: #CFCFB4;
+  --accent2-color: #B4CDE4;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #f0f0f0;
+}
+
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% auto;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, section, article {
+  margin: 16px 0;
+  padding: 8px;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: black;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures it fills the hero area without stretching */
+  display: block;
+}
+
+.hero h1 {
+  position: static;
+  background-color: var(--accent1-color);
+  text-align: center;
+  padding: 16px;
+  margin-top: -100px;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+/* Article Box inside Hero */
+.article-box {
+  position: static;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--accent2-color);
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.article-box p {
+  margin-right: 16px;
+  color: #000; 
+  font-weight: 500;
+}
+
+.article-box img {
+  width: 125px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Navigation Links on Home */
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.links a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--accent1-color);
+  background-color: var(--accent2-color);
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: var(--accent1-color);
+  border-color: var(--secondary-color);
+}
+
+/* Welcome Section */
+.history-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--accent2-color);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.history-text {
+  flex: 1;
+  padding: 10px;
+  color: black;
+}
+
+.history-text h2 {
+  margin-bottom: 1rem;
+}
+
+.history-text p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.history-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+/* Adventure Gallery Section */
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 12px;
+  padding: 10px;
+  background-color: #bab5b5;
+  border-radius: 10px;
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  background-color: var(--accent1-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--accent2-color);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid var(--accent2-color);
+  border-radius: 0 0 10px 10px;
+}
+
+footer p {
+  color: var(--accent1-color);
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 12px;
+}
+
+footer .socialmedia a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+footer .socialmedia a img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .history-container,
+  .adventure-gallery,
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }

@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.main-content {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.temple-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+}
+
+.info-box {
+    background-color: #e0e0e0;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #0645AD;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
+    font-size: 16px;
+}

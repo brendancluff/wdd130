@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Brendan Cluff | WDD 130</title>
-  <meta name="description" content="Brendan Cluff's WDD 130 homepage. Learn more about me, my projects, and my web development journey.">
+  <meta name="description" content="Brendan Cluff's WDD 130 homepage.">
   <meta name="author" content="Brendan Cluff">
-    <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header>
@@ -16,36 +17,54 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="rafting.html">Rafting Website</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h1>Brendan Cluff | WDD 130</h1>
+  <div class="grid">
+    <main>
+      <h1>Brendan Cluff | WDD 130</h1>
 
-    <img src="images/profile.webp" alt="Profile photo of Brendan Cluff" width="200">
+      <img src="images/profile.webp" alt="Profile photo of Brendan Cluff" width="200" class="profile">
 
-    <p>
-      Hello! My name is Brendan Cluff. I am currently a student in WDD 130, 
-      and I enjoy learning web development. In my free time I like hiking, 
-      spending time with friends and family, and exploring new technology. 
-    </p>
-  </main>
+      <p>
+        Hello! My name is Brendan Cluff. I am currently a student in the BYU-Pathway program, 
+        and I enjoy learning web development. In my free time I like hiking, 
+        spending time with friends and family, and exploring new technology. 
+        I also enjoy reading, and other adventure avtibites.
+      </p>
 
-  <aside>
-    <h2>Arizona, USA</h2>
-    <img src="images/arizona.webp" alt="Scenic view of Arizona" width="300">
-    <p>
-      Arizona is known for its stunning desert landscapes, the Grand Canyon, 
-      and vibrant sunsets. It has a rich cultural heritage with Native American 
-      and Hispanic influences, and offers numerous outdoor recreational activities 
-      year-round.
-    </p>
-  </aside>
+      <h2>My Favorite Temples</h2>
+      <ul class="box">
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/tucson-arizona-temple?lang=eng" target="_blank" rel="noopener noreferrer">Tucson Arizona Temple</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/gilbert-arizona-temple?lang=eng" target="_blank" rel="noopener noreferrer">Gilbert Arizona Temple</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/temples/details/tokyo-japan-temple?lang=eng" target="_blank" rel="noopener noreferrer">Tokyo Japan Temple</a></li>
+      </ul>
+    </main>
+
+    <aside class="box">
+      <div class="image-container">
+        <img src="images/arizona.webp" alt="Scenic view of Arizona" width="300">
+        <h2>Arizona, USA</h2>
+      </div>
+      <p>
+        Arizona is known for its stunning desert landscapes, the Grand Canyon, 
+        and vibrant sunsets. It has a rich cultural heritage with Native American 
+        and Hispanic influences, and offers numerous outdoor recreational activities 
+        year-round.
+      </p>
+    </aside>
+  </div>
 
   <footer>
-    <p>&copy; 2025 🐲 Brendan Cluff 🐲 | Arizona, USA</p>
+    <p>&copy; <span id="year"></span> 🐲 Brendan Cluff 🐲 | Arizona, USA</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 

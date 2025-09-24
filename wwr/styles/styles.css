@@ -7,39 +7,43 @@
     box-sizing: border-box;
 }
 
-
-header, footer, .grid {
+/* Center header, grid, and footer */
+header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
+/* Navigation */
 nav {
-    background-color: rgb(97, 138, 228);
-    padding: 10px;
+    background-color: steelblue;
+    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
+    color: #fff;
 }
 
+nav a:hover {
+    text-decoration: underline;
+    color: #ffeb3b;
+}
+
+/* Heading */
 h1 {
     color: darkblue;
     border-bottom: 5px solid darkblue;
+    padding-bottom: 0.5rem;
 }
 
-main {
-    max-width: 840px;
-    margin: 1rem;
-}
-
+/* Profile Image */
 .profile {
     float: right;
     margin-left: 1rem;
@@ -51,11 +55,28 @@ main {
     box-shadow: 0 0 30px gray;
 }
 
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr; /* aside fixed width, main flexible */
+    gap: 1rem;
+    align-items: start;
+}
+
 aside {
     width: 20rem;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     text-align: center;
 }
 
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+}
+
+/* Aside Image Container */
 .image-container {
     position: relative;
     display: inline-block;
@@ -73,30 +94,11 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    max-width: 100%;
     height: auto;
 }
 
-
-.grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-    align-items: start;
-}
-
-p {
-    padding: 0;
-}
-
-
-footer {
-    margin-top: 30px;
-    border-top: 10px solid #000;
-    text-align: center;
-    padding: 1rem 0;
-}
-
+/* Boxes and Lists */
 .box {
     margin: 1rem;
     padding: 1rem;
@@ -118,8 +120,41 @@ ul li {
 ul li a {
     color: darkblue;
     text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 ul li a:hover {
     text-decoration: underline;
 }
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    border-top: 10px solid #000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Fixes */
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr; /* stack aside and main */
+    }
+
+    .profile {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    aside {
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    main {
+        grid-column: 1 / 2;
+    }
+}
+

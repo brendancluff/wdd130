@@ -7,13 +7,11 @@
     box-sizing: border-box;
 }
 
-/* Center header, grid, and footer */
 header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* Navigation */
 nav {
     background-color: steelblue;
     padding: 1rem;
@@ -36,14 +34,12 @@ nav a:hover {
     color: #ffeb3b;
 }
 
-/* Heading */
 h1 {
     color: darkblue;
     border-bottom: 5px solid darkblue;
     padding-bottom: 0.5rem;
 }
 
-/* Profile Image */
 .profile {
     float: right;
     margin-left: 1rem;
@@ -55,10 +51,9 @@ h1 {
     box-shadow: 0 0 30px gray;
 }
 
-/* Grid Layout */
 .grid {
     display: grid;
-    grid-template-columns: 20rem 1fr; /* aside fixed width, main flexible */
+    grid-template-columns: 20rem 1fr;
     gap: 1rem;
     align-items: start;
 }
@@ -76,7 +71,6 @@ main {
     margin: 1rem;
 }
 
-/* Aside Image Container */
 .image-container {
     position: relative;
     display: inline-block;
@@ -98,7 +92,6 @@ aside img {
     height: auto;
 }
 
-/* Boxes and Lists */
 .box {
     margin: 1rem;
     padding: 1rem;
@@ -127,7 +120,6 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     margin-top: 30px;
     border-top: 10px solid #000;
@@ -135,10 +127,9 @@ footer {
     padding: 1rem 0;
 }
 
-/* Responsive Fixes */
 @media (max-width: 700px) {
     .grid {
-        grid-template-columns: 1fr; /* stack aside and main */
+        grid-template-columns: 1fr; 
     }
 
     .profile {

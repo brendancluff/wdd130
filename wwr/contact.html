@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact White Water Rafting Company for trip inquiries, reservations, or questions. Includes address, phone, email, map, employee profiles, and a contact form.">
+  <meta name="author" content="Brendan Cluff">
+  <title>Contact Us - White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <div class="page">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="White Water Rafting company logo" class="logo-img">
+        <div class="company-name">White Water Rafting</div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Company Info -->
+      <section class="contact-info" aria-labelledby="contact-info-title">
+        <h1 id="contact-info-title">White Water Rafting Company</h1>
+        <address>
+          123 Main River Street <br>
+          Bellybutton, Arizona <br>
+          <strong>Phone:</strong> +1 999 999 9999 <br>
+          <strong>Email:</strong> info@whitewater.com
+        </address>
+      </section>
+
+      <!-- Map + Contact Form -->
+      <section class="contact-grid">
+        <!-- Embedded Google Map -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094273!2d144.95373631531842!3d-37.81627977975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ5JzAwLjYiUyAxNDTCsDU3JzE5LjQiRQ!5e0!3m2!1sen!2sus!4v1672612345678"
+            width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="#" method="post" class="contact-form">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          <fieldset>
+            <legend>Message Purpose</legend>
+            <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label><br>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+          </fieldset>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+
+          <label>
+            <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Employee Profiles -->
+      <section class="employees" aria-labelledby="employee-title">
+        <h2 id="employee-title">We Are Here to Serve You</h2>
+        <div class="employee-grid">
+          <figure>
+            <img src="images/employee1.jpg" alt="John Smith - Lead Guide">
+            <figcaption>John Smith — Lead Guide</figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee2.jpg" alt="Sarah Johnson - Safety Coordinator">
+            <figcaption>Sarah Johnson — Safety Coordinator</figcaption>
+          </figure>
+          <figure>
+            <img src="images/employee3.jpg" alt="Emily Lee - Customer Experience Manager">
+            <figcaption>Emily Lee — Customer Experience Manager</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>&copy; <span id="year">2025</span> White Water Rafting - Brendan Cluff</div>
+      <div class="social">
+        <a href="https://facebook.com" aria-label="Visit us on Facebook">
+          <img src="images/facebook.jpg" alt="Facebook logo">
+        </a>
+        <a href="https://twitter.com" aria-label="Visit us on Twitter">
+          <img src="images/twitter.jpg" alt="Twitter logo">
+        </a>
+        <a href="https://instagram.com" aria-label="Visit us on Instagram">
+          <img src="images/instagram.jpg" alt="Instagram logo">
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
